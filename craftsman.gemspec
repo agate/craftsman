@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Craftsman::VERSION
   spec.authors       = ["agate"]
   spec.email         = ["agate.hao@gmail.com"]
-  spec.summary       = %q{A set of helper libs for building inline template.}
+  spec.summary       = %q{A set of helpers for building inline template.}
   spec.description   = %q{Currently, only support haml.}
   spec.homepage      = ""
   spec.license       = "MIT"
