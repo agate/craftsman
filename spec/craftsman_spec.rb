@@ -1,9 +1,7 @@
 require File.expand_path('../spec_helper', __FILE__)
 
 describe Craftsman do
-  it "can paint correctly" do
-    output = Craftsman.paint(CustomPackage, 'package_a')
-    expect(output).to eq(<<OUTPUT)
+  EXPECT_OUTPUT = <<OUTPUT
 ///////////// helpers/main.rb /////////////
 :ruby
   def display_date
@@ -47,5 +45,15 @@ describe Craftsman do
       %td c
       %td 3
 OUTPUT
+
+  it "can paint correctly with custom package class and package id" do
+    output = Craftsman.paint(CustomPackage, 'package_a')
+    expect(output).to eq(EXPECT_OUTPUT)
+  end
+
+  it "can paint correctly with custom package instance" do
+    package = CustomPackage.new('package_a')
+    output = Craftsman.paint(package)
+    expect(output).to eq(EXPECT_OUTPUT)
   end
 end
