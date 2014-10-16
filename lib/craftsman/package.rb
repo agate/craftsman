@@ -1,6 +1,8 @@
 # you need to implement your own Package class
 # which is extended from "Craftsman::Package"
 class Craftsman::Package
+  attr_reader :id
+
   def initialize(id)
     @id = id
   end
