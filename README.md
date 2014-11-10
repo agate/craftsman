@@ -2,7 +2,9 @@
 
 A set of helpers for building inline template. (Currently, only support haml)
 
-[![Build Status](https://travis-ci.org/agate/craftsman.svg)](https://travis-ci.org/agate/craftsman)
+[![Build Status](http://img.shields.io/travis/agate/craftsman.svg?style=flat)](https://travis-ci.org/agate/craftsman)
+[![Download Status](http://img.shields.io/gem/dt/craftsman.svg?style=flat)](https://rubygems.org/gems/craftsman)
+[![Gem Version](http://img.shields.io/gem/v/craftsman.svg?style=flat)](https://rubygems.org/gems/craftsman)
 
 ## Installation
 
