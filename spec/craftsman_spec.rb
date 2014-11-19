@@ -27,6 +27,12 @@ describe Craftsman do
       background-color: green
 
 
+///////////// stylesheets/pre.blank.characters.sass /////////////
+:sass
+  body
+    background-color: red
+
+
 = display_date
 
 %table

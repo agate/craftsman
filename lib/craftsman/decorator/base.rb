@@ -28,7 +28,7 @@ module Craftsman::Decorator
 
       filter = <<FILTER.strip
 :#{filter_name}
-#{append_indent(target_content)}
+#{append_indent(target_content.lstrip)}
 FILTER
 
       if ['js', 'coffee'].include? target_ext

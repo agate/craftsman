@@ -6,7 +6,7 @@ describe :package do
   end
 
   it "should return all the targets" do
-    expect(@package.targets.size).to eq(5)
+    expect(@package.targets.size).to eq(6)
   end
 
   it "can get target's content" do
